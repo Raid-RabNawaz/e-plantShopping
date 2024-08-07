@@ -12,10 +12,12 @@ const CartItem = ({ onContinueShopping }) => {
  
   };
 
-  const handleContinueShopping = (e) => {
-   
+  
+   const handleContinueShopping = (e) => {
+    e.preventDefault();
+    setShowCart(false);
   };
-
+  
 
 
   const handleIncrement = (item) => {
